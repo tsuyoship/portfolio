@@ -2,240 +2,201 @@
 @import url(https://fonts.googleapis.com/css?family=Abel);
 /* Base
 ------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
 
-html{
-  font-size: 62.5%;
-}
-
-body
-{
-    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; /* フォントの種類 */
-    font-size: 1.4rem;
-    line-height: 1.6;
-    letter-spacing: .1rem;
-    color: #4c4c4c;
-    background-color: #fdfcf6;
-}
-
-.button-contact{
-  border: 2px solid #4c4c4c;
+body {
   color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container, #skills i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #skills h3 {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase, section h2, #skills h3 {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+.button-contact {
   width: 20px;
   height: 20px;
-  float: right;
-  text-align: center;
-  margin: 20px 20px 0 0;
   padding: 10px;
+  border: 2px solid #4c4c4c;
+  color: #4c4c4c;
+  text-align: center;
+  display: block;
+  float: right;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   font-size: 20px;
   line-height: 0;
-  display: block;
-  border-radius: 10px 0 10px 0;
-}
+  margin: 20px 20px 0 0; }
+  .button-contact:visited {
+    color: #4c4c4c; }
 
-.abel,
-section h2{
-    font-family: 'Abel', sans-serif; /* Google Fontsの指定 */
-}
-
-.uppercase,
-  section h2,
-  #skills h3,
-  #works .works-box a .works-box-inner
-  .button-readmore{
-    text-transform: uppercase;
-  }
-
-.text-center{
-  text-align: center;
-}
-  
-header .profile{
-  clear: both;
+header .profile {
   width: 60%;
   margin: 0 auto;
   padding: 60px 0;
-}
-
-header .site-title{
+  clear: both; }
+header .site-title {
   font-size: 1.8rem;
-  line-height: normal;
-}
-
-header .site-title span{
-  font-size: 4.2rem;
-  display: block;
-  color: #14c0c9;
-}
-
-.block-center,
-section .container,
-#skills i{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-header .profile-icon{
-  margin: 30px auto;
-  border-radius: 50%;
-}
-
-header p{
-  font-size: 1.6rem;
-}
-
-section{
-  padding: 60px 0;
-}
-
-section .container{
-  width: 90%;
-}
-section h2{
-  font-size: 3.2rem;
-}
-
-#skills{
-  background-color: #FF9999;
-}
-#skills .container{
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-between;
-}
-#skills h2{
-  margin-bottom: 60px;
-  color: #fdfcf6;
-}
-
-#skills .skill-box{
-  box-sizing: border-box;
-  flex: 1;
-  margin: 0 10px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #fdfcf6;
-}
-
-#skills i{
-  font-size: 4.5rem;
-  box-sizing: border-box;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 5px;
-  padding-top: 15px;
-  text-align: center;
-  color: #fff;
-  border-radius: 50%;
-  background-color: #14c0c9;
-}
-
-#skills h3{
-  font-size: 2.4rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #14c0c9;
-}
-
-#works{
-  padding-bottom: 0;
-}
-#works h2{
-  margin-bottom: 50px;
-}
-#works .works-box{
-  float: left;
-  width: 33.333333%;
-  height: 100%;
-}
-
-#works::after{
-  display: block;
-  clear: both;
-  content: '';
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#contact ul
-{
-    margin-top: 60px;
-
-    text-align: center;
-}
-#contact ul li
-{
-    font-size: 2.8rem;
-
-    display: inline-block;
-
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-right: 20px;
-
-    text-align: center;
-    vertical-align: top;
-}
-#contact ul li:last-child
-{
-    margin-right: 0;
-}
-
-#contact ul .github,
-#contact ul .skype
-{
-    font-size: 3.2rem;
-}
-#contact ul .github i
-{
-    margin-left: 2px;
-}
-
-#contact ul a
-{
+  line-height: normal; }
+  header .site-title span {
     display: block;
+    font-size: 4.2rem;
+    color: #14c0c9; }
+header .profile-icon {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 30px auto; }
+header p {
+  font-size: 1.6rem; }
 
-    width: 50px;
-    height: 50px;
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
 
-    color: #fff;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
+#skills {
+  background-color: #FF9999; }
+  #skills .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #skills h2 {
+    color: #fdfcf6;
+    margin-bottom: 60px; }
+  #skills .skill-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #skills i {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
     background-color: #14c0c9;
-}
-#contact ul a:hover
-{
-    background-color: #0f949b;
-}
-
-footer
-{
-    padding: 10px 0;
-
+    font-size: 4.5rem;
+    color: #FFF;
     text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+  #skills h3 {
+    color: #14c0c9;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
 
-    color: #fff;
-    background-color: #bea300;
-}
+@media (min-width: 1025px) {
+  /* Base
+  ------------------------------------------------------------*/
+  a:hover {
+    text-decoration: underline; }
+
+  /* Header
+  ------------------------------------------------------------*/
+  .button-contact:hover, .button-contact:active {
+    background-color: #4c4c4c;
+    color: #FFF; }
+
+  #skills .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #skills .skill-box {
+    margin: 0 10px; } }
+#works {
+  padding-bottom: 0; }
+  #works h2 {
+    margin-bottom: 50px; }
+  #works .works-box {
+    width: 100%;
+    float: left;
+    height: 100%; }
+  #works a {
+    display: block;
+    positive: relative; }
+    #works a .works-box-inner {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      color: #FFF; }
+      #works a .works-box-inner div {
+        position: absolute;
+        margin: auto;
+        height: 40%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 20px; }
+      #works a .works-box-inner h3 {
+        font-size: 1.6rem;
+        margin: 0 0 5px;
+        font-weight: bold; }
+      #works a .works-box-inner small {
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 15px; }
+      #works a .works-box-inner .button-readmore {
+        margin: auto;
+        text-align: center;
+        padding: 5px 0;
+        width: 180px;
+        display: block;
+        color: #fff; }
+  #works img {
+    max-width: 100%;
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */
